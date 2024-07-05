@@ -1,66 +1,68 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# QUESTION 1
+This project is a Laravel-based application  for handling for encryption and decryption of text string. It accept string and encryption it using openssl  AES/256/CBC/PKCS7Padding algorithm in hexadecimal(HEX) output format.
+Also decryption back to the original string
+ 
+## Features
+Encryption and Decryption of text string
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+ To run the project
+Open your browser and paste the 'http://127.0.0.1:8000/encryption' to your URL
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+# QUESTION 2
+This project is a Laravel-based application using blade for handling user registrations. It accepts name ,phone number and email address as input and stores them in a database.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Features
+Form Validation: Ensures that user inputs meet the required criteria before saving to the database.
+Unique Email Check: Prevents duplicate email registrations.
+Email Notification: Sends a confirmation email to the user after successful registration.
+ To run the project
+Open your browser and paste the 'http://127.0.0.1:8000/register' to your URL
+## Installation
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+---------------------------------------------------------------------------------------------------------
+# QUESTION 3
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+This project is a Laravel-based API for handling user registrations. It accepts phone numbers, mobile networks, messages, and reference codes as input and stores them in a database.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Features
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- Accepts phone number, mobile network, message, and unique reference code as input.
+- Validates input data.
+- Stores registration data in a MySQL database.
+- Returns JSON responses.
+How to run 
+Use Postman to run the project using the url 'http://127.0.0.1:8000/api/create'
+use raw as request body find sample below
+{
+"phone_number": "12345678901",
+"mobile_network": "mtn",
+"message": "Hello, this is a test message.",
+"ref_code": "unique_ref_code_12333"
+}
 
-## Laravel Sponsors
+-------------------------------------------------------------------------------------
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## Installation requirements
 
-### Premium Partners
+- PHP 8.0 or higher
+- Composer
+- MySQL
+- Git
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+### Installation
 
-## Contributing
+#1 git clone the repo to your local machine https://github.com/manquadry/novajitestanswer
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+#2 change directory to the application folder novajitestanswer
 
-## Code of Conduct
+#3 run composer update to  install the necessary dependency
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+#4 create a database novaji_test on your localhost 'Check the env file for details' about this.
 
-## Security Vulnerabilities
+#5 run all the application as describe 
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
