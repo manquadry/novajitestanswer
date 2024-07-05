@@ -19,8 +19,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Route::get('/encryption', [EncryptionController::class, 'show']);
-
 Route::get('/encryption', [EncryptionController::class, 'showForm'])->name('encryption.form');
 Route::post('/encrypt', [EncryptionController::class, 'handleEncrypt'])->name('encrypt');
 Route::post('/decrypt', [EncryptionController::class, 'handleDecrypt'])->name('decrypt');
